@@ -121,3 +121,13 @@ layout: base
     });
   </script>
   
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('/Novel/{{ page.categories }}/toc.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('outline').innerHTML = data;
+        });
+    });
+  </script>
