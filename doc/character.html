@@ -1,10 +1,8 @@
 ---
-layout: base
+layout: notes
 ---
 
-{% include sidebar.html%}
-
-## 基礎表格
+<h1>{{ page.Name }}</h1>
 
 <style>
     td {
@@ -44,79 +42,85 @@ layout: base
     }
   
     .white-bg {
-      width: 10em;
+      width: 5em;
       background-color: rgb(32, 32, 32);
     }  
     .cyan-bg {
-      width: 10em;
+      width: 5em;
       background-color: rgb(13, 97, 145);
     }  
     .yellow-bg {
-      width: 10em;
+      width: 5em;
       background-color: rgb(85, 80, 35);
     }
     .green-bg {
-      width: 10em;
+      width: 5em;
       background-color: rgb(4, 99, 4);
     }
 </style>
-  
+
+<h2>基礎設定</h2>
 
   
 <div class="table-container">
-<table style="width: 720px; table-layout: fixed;">
+<table style="width: 100%; table-layout: fixed;">
     <tr>
-    <td class="cyan-bg">名稱</td>
-    <td class="align-left">{{ page.Name }}</td>
+      <td class="cyan-bg">名稱</td>
+      <td class="align-left">{{ page.Name }}</td>
+      <td rowspan="7"><img src="{{ page.Image }}"></td>
     <tr>
-    <td class="cyan-bg">種族 性別</td>
-    <td class="align-left">{{ page.Race_Gender }}</td>
+      <td class="cyan-bg">種族 性別</td>
+      <td class="align-left">{{ page.Race_Gender }}</td>
     <tr>
-    <td class="cyan-bg">年齡</td>
-    <td class="align-left">{{ page.Age }}</td>
+      <td class="cyan-bg">年齡</td>
+      <td class="align-left">{{ page.Age }}</td>
     <tr>
-    <td class="cyan-bg">身型</td>
-    <td class="align-left">{{ page.Body_Shape }}</td>
+      <td class="cyan-bg">身型</td>
+      <td class="align-left">{{ page.Body_Shape }}</td>
     <tr>
-    <td class="cyan-bg">職業</td>
-    <td class="align-left">{{ page.Profession }}</td>
+      <td class="cyan-bg">職業</td>
+      <td class="align-left">{{ page.Profession }}</td>
     <tr>
-    <td class="cyan-bg">說話方式</td>
-    <td class="align-left">{{ page.Speaking_Style }}</td>
+      <td class="cyan-bg">說話方式</td>
+      <td class="align-left">{{ page.Speaking_Style }}</td>
     <tr>
-    <tr>
-    <td class="cyan-bg">口頭禪</td>
-    <td class="align-left">{{ page.Catchphrase }}</td>
-    <tr>
+      <td class="cyan-bg">口頭禪</td>
+      <td class="align-left">{{ page.Catchphrase }}</td>
+    </tr>
+  </table>
+</div>
+<div>
+<table style="width: 100%; table-layout: fixed;">
+
+  <tr>
     <td class="yellow-bg">個性</td>
     <td class="align-left">{{ page.Personality }}</td>
-    <tr>
+  <tr>
     <td class="yellow-bg">信念</td>
     <td class="align-left">{{ page.Faith }}</td>
-    <tr>
+  <tr>
     <td class="yellow-bg">開場時的缺憾</td>
     <td class="align-left">{{ page.Regret }}</td>
-    <tr>
+  <tr>
     <td class="yellow-bg">故事中的目標</td>
     <td class="align-left">{{ page.Goal }}</td>
-    <tr>
+  <tr>
     <td class="yellow-bg">側寫</td>
     <td class="align-left">{{ page.Another_Perspective }}</td>
-    <tr>
+  <tr>
     <td class="yellow-bg">簡史</td>
     <td class="align-left">{{ page.Brief_History }}</td>
-    <tr>
+  <tr>
     <td class="white-bg">原型參考</td>
     <td class="align-left">{{ page.References }}</td>
-    <tr>
+  <tr>
     <td class="white-bg">形象概念</td>
     <td class="table-cell">{{ page.Concept }}</td>
-    </tr>
+  </tr>
 </table>
 </div>
-  
-  
-## 進階表格
+
+<h2>人格發展史</h2>
 
 <div class="table-container">
 <table style="width: 720px; table-layout: fixed;">
