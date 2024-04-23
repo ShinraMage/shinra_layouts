@@ -11,7 +11,7 @@
           {%- assign default_paths = site.pages | map: "path" -%}
           {%- assign page_paths = site.header_pages | default: default_paths -%}
           {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-          <a class="site-title" rel="author" href="/"><img src="https://posetmage.com/Images/Icon/PosetMage_t.webp" Height="16" /> PosetMage</a>
+          <a class="site-title" rel="author" href="/"><img src="https://posetmage.com/Images/Icon/ShinraMage_t.webp" Height="16" /> 森羅Mage</a>
       
           <nav class="site-nav">
             <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -25,8 +25,7 @@
     
             <div class="trigger">
               <a class="page-link" href="/About/">About</a>
-              <a class="page-link" href="/GameDesign/">GameDesign</a>
-              <a class="page-link" href="/Weekly/">Weekly</a>
+              <a class="page-link" href="/Blog/">Blog</a>
               <a class="page-link" href="/Contact/">Contact</a>
             </div>
           </nav>
@@ -39,7 +38,7 @@
       </div>
     </main>
 
-    {%- assign slogan = "ΔS > 0" -%}
+    {%- assign slogan = "Might and Magic" -%}
 
     {%- include footer.html -%}
 
