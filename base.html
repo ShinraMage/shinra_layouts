@@ -26,12 +26,21 @@
             <div class="trigger"></div>
           </nav>
         </div>
+
+      <style>
+        @media (min-width: 1000px) { /* Adjust this breakpoint as needed */
+            .page-content {
+              flex-grow: 1; /* Consumes the rest of the space */
+              margin-left: 200px;
+              margin-right: 200px;          
+              max-width: calc(100% - 150px);
+            }
+        }
+      </style>
     </header>
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
         {{ content }}
-      </div>
     </main>
 
     {%- assign slogan = "蒼き風雲 叡智を築く者" -%}
